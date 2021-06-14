@@ -44,8 +44,21 @@ $ less /var/lib/jenkins/secrets/initialAdminPassword
 user : admin
 pass : admin
 6. http://54.169.68.172:8080/
-
 ```
+Install jenkins at http://54.169.68.172:8080/
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_2.jpg)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_3.png)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_4.jpg)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_5.png)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_6.jpg)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_7.jpg)
+
+## _Setting webhook on github_
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_8.png)
+
+
+
+
 
 ## Plugins
 
