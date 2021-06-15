@@ -1,6 +1,6 @@
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
-Create new ec2  & open port 8080 in security group:
+> Note: `--open port 8080` in security group.
 
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_1.png)
 
@@ -56,9 +56,95 @@ Install jenkins at http://54.169.68.172:8080/
 ## _Setting webhook on github_
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_8.png)
 
+## _Setting new item project
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_9.png)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_10.png)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_11.png)
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_12.png)
+## Command
+```sh
+ssh -T -i /home/jenkins/web-server.pem -o StrictHostKeyChecking=no ec2-user@3.1.145.148 << EOF
+sudo su -
+cd /usr/share/ari-core/angular_uat/ARI-CORE-ANGULAR
+sudo git pull origin deployment/uat-webapp-vn
+sudo npm i
+sudo rm -rf dist
+sudo ng build
+EOF
+```
+## _Setting ssh from jenkins ec2 to webserver ec2_
+```sh
+- Create folder jenkins
+$ sudo mkdir /home/jenkins
+$ cd /home/jenkins
+$ sudo nano web-server.pem
+- copy content private key ec2 web-server in web-server.pem
+$ chmod 777 web-server.pem
+```
 
+## _Setting nginx mapping domain_
+```sh
+$ sudo nano /etc/nginx/conf.d/default.conf
+server {
+        listen 80 default_server;
 
+        server_name _;
+        return 301 https://$host$request_uri;
 
+}
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/webserver.cert;
+        ssl_certificate_key /etc/nginx/cert/webserver.key;
+
+        server_name ari-webserver.click;
+
+        location / {
+                root /usr/share/ari-core/angular/ARI-CORE-ANGULAR/dist/Corev2;
+                try_files $uri $uri/ /index.html?/$request_uri;
+        }
+}
+
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/uat.cert;
+        ssl_certificate_key /etc/nginx/cert/uat.key;
+
+        server_name shop-thermomix-sg.click;
+
+        location / {
+                root /usr/share/ari-core/angular-uat/ARI-CORE-ANGULAR/dist/Corev2;
+                try_files $uri $uri/ /index.html?/$request_uri;
+        }
+}
+```
+
+## _Install  SSL_: https://www.youtube.com/watch?v=ciFW75XtUOc&t=96s
+
+```sh
+Step1: Cài đặt mod ssl cho Apache
+yum -y install mod_ssl
+
+Step2:Cài đặt Cài đặt openssl
+yum install openssl
+
+Step3: Tạo private key
+ mkdir -p /usr/share/nginx/conf/ssl
+cd /usr/share/nginx/conf/ssl
+openssl genrsa > server.key
+
+Step4: Tiếp theo, tạo file CSR, file CSR này được sử dụng khi cơ quan cấp chứng chỉ cấp chứng chỉ cho máy chủ
+openssl req -new -key server.key > server.csr
+
+Step5: Gửi file server.csr ở trên cho nhà cung cấp SSL(nơi bạn muốn mua SSL) bạn sẽ nhận được các file cerfiticate
+ví dụn mình dùng sslforfree để thực hành bài này : https://manage.sslforfree.com/
+
+Step6: Copy các file cerfiticate nhận được vào thư mục và change quyền cho các file này
+```
 
 ## Plugins
 
