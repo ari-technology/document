@@ -1,3 +1,20 @@
+## DEVOPS BEGINNER
+
+| STT | CONTENT |
+| 1 | [Create Ec2 run jenkins machine] |
+| 2 | [Install nginx in ec2 linux] |
+| 3 | [Install git] |
+| 4 | [Install jenkins] |
+| 5 | [Setting webhook on github] |
+| 6 | [Setting new item project] |
+| 7 | [Setting ssh from jenkins ec2 to webserver ec2] |
+| 8 | [Setting nginx mapping domain] |
+| 9 | [Install  SSL |
+| 10 | [Setting Route53] |
+| 11 | [Create AMIs] |
+
+
+
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
 > Note: `--open port 8080` in security group.
@@ -162,19 +179,7 @@ Create image to backup ec2.
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_18.png)
 
 
-## Plugins
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
 
 
 
