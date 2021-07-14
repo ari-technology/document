@@ -2,7 +2,7 @@
 
 | Plugin | README |
 | ------ | ------ |
-| Create Ec2 run jenkins machine | [https://aws.amazon.com/ec2/getting-started] |
+| Create Ec2 run jenkins machine |
 | Install nginx in ec2 linux | [https://www.youtube.com/watch?v=leCZ7htfB_g] |
 | Install git | [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-centos-7] |
 | Install jenkins | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
