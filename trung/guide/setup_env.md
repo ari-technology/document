@@ -1,20 +1,3 @@
-## DEVOPS BEGINNER
-
-| STT | CONTENT |
-| 1 | [Create Ec2 run jenkins machine] |
-| 2 | [Install nginx in ec2 linux] |
-| 3 | [Install git] |
-| 4 | [Install jenkins] |
-| 5 | [Setting webhook on github] |
-| 6 | [Setting new item project] |
-| 7 | [Setting ssh from jenkins ec2 to webserver ec2] |
-| 8 | [Setting nginx mapping domain] |
-| 9 | [Install  SSL |
-| 10 | [Setting Route53] |
-| 11 | [Create AMIs] |
-
-
-
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
 > Note: `--open port 8080` in security group.
@@ -178,8 +161,108 @@ Create image to backup ec2.
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_17.png)
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_18.png)
 
+## _Install PM2_
+https://pm2.keymetrics.io/docs/usage/quick-start/
+
+```sh
+$npm install pm2@latest -g
+$sudo pm2 install typescript
+$sudo pm2 install @types/node
+```
+
+## _Update nginx_
+```sh
+upstream customer_be_8888 {
+        ip_hash;
+        server 127.0.0.1:8888;
+}
+
+server {
+        listen 80 default_server;
+
+        server_name _;
+        return 301 https://$host$request_uri;
+
+}
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/webserver.cert;
+        ssl_certificate_key /etc/nginx/cert/webserver.key;
+
+        server_name ari-webserver.click;
+
+        location / {
+                root /usr/share/ari-core/angular/ARI-CORE-ANGULAR/dist/Corev2;
+                try_files $uri $uri/ /index.html?/$request_uri;
+        }
+}
+
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/uat.cert;
+        ssl_certificate_key /etc/nginx/cert/uat.key;
+
+        server_name shop-thermomix-sg.click;
+
+        location / {
+                root /usr/share/ari-core/angular-uat/ARI-CORE-ANGULAR/dist/Corev2;
+                try_files $uri $uri/ /index.html?/$request_uri;
+        }
+}
+
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/webserver.cert;
+        ssl_certificate_key /etc/nginx/cert/webserver.key;
+
+        server_name api-ari-webserver.click;
+
+        location / {
+                # trailing slash is key
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_pass http://customer_be_8888;
+        }
 
 
+}
+```
+
+### _Config jenkins deploy backend_
+```sh
+ssh -T -i /home/jenkins/web-server.pem -o StrictHostKeyChecking=no ec2-user@3.1.145.148 << EOF
+sudo su -
+cd /usr/share/ari-core/backend/ARI-CORE-NESTJS/
+git pull origin deployment/stag2a
+npm i
+export NODE_ENV=local
+pm2 kill
+pm2 start npm --name "nestjs" -- start
+```
+
+### _Install postgre database in nginx_
+
+
+## Plugins
+
+Dillinger is currently extended with the following plugins.
+Instructions on how to use them in your own application are linked below.
+
+| Plugin | README |
+| ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md][PlDb] |
+| GitHub | [plugins/github/README.md][PlGh] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
 
 
 
