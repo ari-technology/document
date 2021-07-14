@@ -2,7 +2,7 @@
 
 | Plugin | README |
 | ------ | ------ |
-| Create Ec2 run jenkins machine | [plugins/dropbox/README.md][PlDb] |
+| Create Ec2 run jenkins machine | [https://aws.amazon.com/ec2/getting-started/] |
 | Install nginx in ec2 linux | [plugins/github/README.md][PlGh] |
 | Install git | [plugins/googledrive/README.md][PlGd] |
 | Install jenkins | [plugins/onedrive/README.md][PlOd] |
