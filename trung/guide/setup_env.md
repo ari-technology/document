@@ -1,17 +1,17 @@
 ## DEVOPS BEGINNER
-| Plugin | README |
+| STT | CONTENT |
 | ------ | ------ |
 | Create Ec2 run jenkins machine |1|
-| Install nginx in ec2 linux |
-| Install git |
-| Install jenkins | 
-| Setting webhook on github |
-| Setting new item project | 
-| Setting ssh from jenkins ec2 to webserver ec2 | 
-| Setting nginx mapping domain |
-| Install  SSL | 
-| Setting Route53 |
-| Create AMIs | 
+| Install nginx in ec2 linux |2|
+| Install git |3|
+| Install jenkins |4| 
+| Setting webhook on github |5|
+| Setting new item project |6| 
+| Setting ssh from jenkins ec2 to webserver ec2 |7|
+| Setting nginx mapping domain |8|
+| Install  SSL |9| 
+| Setting Route53 |10|
+| Create AMIs |11|  
 
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
