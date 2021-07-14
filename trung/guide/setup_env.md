@@ -1,16 +1,18 @@
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
+## DEVOPS BEGINNER
 
 | Plugin | README |
 | ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| Create Ec2 run jenkins machine | [plugins/dropbox/README.md][PlDb] |
+| Install nginx in ec2 linux | [plugins/github/README.md][PlGh] |
+| Install git | [plugins/googledrive/README.md][PlGd] |
+| Install jenkins | [plugins/onedrive/README.md][PlOd] |
+| Setting webhook on github | [plugins/medium/README.md][PlMe] |
+| Setting new item project | [plugins/googleanalytics/README.md][PlGa] |
+| Setting ssh from jenkins ec2 to webserver ec2 | [plugins/onedrive/README.md][PlOd] |
+| Setting nginx mapping domain | [plugins/onedrive/README.md][PlOd] |
+| Install  SSL | [plugins/onedrive/README.md][PlOd] |
+| Setting Route53 | [plugins/onedrive/README.md][PlOd] |
+| Create AMIs | [plugins/onedrive/README.md][PlOd] |
 
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
