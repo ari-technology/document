@@ -1,7 +1,7 @@
 ## DEVOPS BEGINNER
 | Plugin | README |
 | ------ | ------ |
-| Create Ec2 run jenkins machine |
+| Create Ec2 run jenkins machine |1|
 | Install nginx in ec2 linux |
 | Install git |
 | Install jenkins | 
