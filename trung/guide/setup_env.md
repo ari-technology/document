@@ -5,10 +5,10 @@
 | Create Ec2 run jenkins machine | [https://aws.amazon.com/ec2/getting-started] |
 | Install nginx in ec2 linux | [https://www.youtube.com/watch?v=leCZ7htfB_g] |
 | Install git | [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-centos-7] |
-| Install jenkins | [plugins/onedrive/README.md][PlOd] |
-| Setting webhook on github | [plugins/medium/README.md][PlMe] |
-| Setting new item project | [plugins/googleanalytics/README.md][PlGa] |
-| Setting ssh from jenkins ec2 to webserver ec2 | [plugins/onedrive/README.md][PlOd] |
+| Install jenkins | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
+| Setting webhook on github | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
+| Setting new item project | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
+| Setting ssh from jenkins ec2 to webserver ec2 | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
 | Setting nginx mapping domain | [plugins/onedrive/README.md][PlOd] |
 | Install  SSL | [plugins/onedrive/README.md][PlOd] |
 | Setting Route53 | [plugins/onedrive/README.md][PlOd] |
