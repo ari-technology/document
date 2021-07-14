@@ -3,16 +3,16 @@
 | Plugin | README |
 | ------ | ------ |
 | Create Ec2 run jenkins machine |
-| Install nginx in ec2 linux | [https://www.youtube.com/watch?v=leCZ7htfB_g] |
-| Install git | [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-centos-7] |
-| Install jenkins | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
-| Setting webhook on github | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
-| Setting new item project | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
-| Setting ssh from jenkins ec2 to webserver ec2 | [https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa&index=2] |
-| Setting nginx mapping domain | [plugins/onedrive/README.md][PlOd] |
-| Install  SSL | [plugins/onedrive/README.md][PlOd] |
-| Setting Route53 | [plugins/onedrive/README.md][PlOd] |
-| Create AMIs | [plugins/onedrive/README.md][PlOd] |
+| Install nginx in ec2 linux |
+| Install git |
+| Install jenkins | 
+| Setting webhook on github |
+| Setting new item project | 
+| Setting ssh from jenkins ec2 to webserver ec2 | 
+| Setting nginx mapping domain |
+| Install  SSL | 
+| Setting Route53 |
+| Create AMIs | 
 
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
