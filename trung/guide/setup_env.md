@@ -14,7 +14,7 @@
 | 10 |Setting Route53|
 | 11 |Create AMIs|  
 
-# Architecture CI/CD
+# Architecture CI/CD (Continuous Integration, Continuous Delivery)
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_19.png)
 
 # Jenkins Install
