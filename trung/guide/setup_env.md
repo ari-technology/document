@@ -55,7 +55,7 @@ $ yum install -y jenkins
 3. Start Jenkins
 $ systemctl start jenkins
 4. Setting password
-$ less /var/lib/jenkins/secrets/initialAdminPassword
+$ cat /var/lib/jenkins/secrets/initialAdminPassword
 5. login
 user : admin
 pass : admin
