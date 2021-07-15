@@ -14,6 +14,9 @@
 | 10 |Setting Route53|
 | 11 |Create AMIs|  
 
+# Architecture CI/CD
+![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_19.png)
+
 # Jenkins Install
 ## _Create Ec2 run jenkins machine_
 > Note: `--open port 8080` in security group.
