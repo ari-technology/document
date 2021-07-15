@@ -120,6 +120,12 @@ server {
 
 }
 ```
+### Git clone 
+```sh
+ssh-keygen
+add public key to github
+ssh-agent bash -c 'ssh-add /root/.ssh/id_rsa; git clone --branch deployment/staging git@github.com:ari-technology/demo-webapp-angular.git'
+```
 ### Config with https
 ```sh
 $ sudo nano /etc/nginx/conf.d/default.conf
