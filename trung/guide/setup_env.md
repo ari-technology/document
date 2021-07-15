@@ -102,6 +102,25 @@ $ chmod 777 web-server.pem
 ```
 
 ## _Setting nginx mapping domain_
+### Config with http
+```sh
+server {
+    listen       80;
+    server_name  _;
+
+    location / {
+         root /usr/share/ari-core/demo-ari;
+        index  index.html index.htm;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+}
+```
+### Config with https
 ```sh
 $ sudo nano /etc/nginx/conf.d/default.conf
 server {
