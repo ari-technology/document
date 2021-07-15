@@ -70,6 +70,9 @@ Install jenkins at http://54.169.68.172:8080/
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_7.jpg)
 
 ## _Setting webhook on github_
+```sh
+http://18.139.163.216:8080/github-webhook/
+```
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_8.png)
 
 ## _Setting new item project_
