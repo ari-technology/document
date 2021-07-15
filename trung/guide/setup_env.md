@@ -101,7 +101,18 @@ $ sudo nano web-server.pem
 $ chmod 777 web-server.pem
 ```
 
-## _Setting nginx mapping domain_
+## _Install ec2 webapp & Setting nginx mapping domain_
+### Install node & npm
+```sh
+- curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash - 
+- sudo yum install nodejs
+- node --version
+- npm --version
+```
+### Install angular
+```sh
+- sudo npm install -g @angular/cli@9.0.4
+```
 ### Config with http
 ```sh
 server {
