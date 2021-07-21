@@ -205,6 +205,29 @@ ví dụn mình dùng sslforfree để thực hành bài này : https://manage.s
 
 Step6: Copy các file cerfiticate nhận được vào thư mục và change quyền cho các file này
 ```
+```sh
+server {
+        listen 80 default_server;
+
+        server_name _;
+        return 301 https://$host$request_uri;
+
+}
+server {
+        listen 443 ssl;
+
+        ssl on;
+        ssl_certificate /etc/nginx/cert/demo.cert;
+        ssl_certificate_key /etc/nginx/cert/demo.key;
+
+        server_name api-web-info-quan5-stag2a.com;
+
+        location / {
+                root /usr/share/ari-core/demo-web-ari/demo-webapp-angular/dist/Corev2/;
+                try_files $uri $uri/ /index.html?/$request_uri;
+        }
+}
+```
 
 ## _Setting Route53_
 Manager domain and mapping beween domain with nginx.
