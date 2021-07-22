@@ -184,7 +184,7 @@ server {
 ```
 ## _SSL là gì_
 SSL là viết tắt của Secure Sockets Layer, một công nghệ tiêu chuẩn cho phép thiết lập kết nối được mã hóa an toàn giữa máy chủ web (host) và trình duyệt web (client).
-Kết nối này đảm bảo rằng dữ liệu được truyền giữa host và client được duy trì một cách riêng tư, đáng tin cậy. SSL hiện đã được sử dụng bởi hàng triệu trang web để bảo vệ các giao dịch trực tuyến của họ với khách hàng.
+Kết nối này đảm bảo rằng dữ liệu được truyền giữa host và client được duy trì một cách riêng tư, đáng tin cậy.
 ## _Tầm quan trọng của SSL_
 SSL giúp bảo vệ những thông tin nhạy cảm khi chúng được truyền qua các mạng máy tính trên thế giới. Nó cung cấp sự riêng tư, bảo mật nghiêm ngặt và toàn vẹn cho dữ liệu của cả trang web và thông tin cá nhân của người truy cập.
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/img_20.png)
