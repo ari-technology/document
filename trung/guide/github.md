@@ -42,6 +42,8 @@ Mỗi khi bạn “commit”, Git sẽ “chụp” và tạo ra một snapshot 
 Tất cả các thao tác thêm/sửa/xoá để thay đổi code sẽ được thực hiện trên working directory. Khi muốn lưu lại những thay đổi này, ta sẽ dùng câu lệnh git add để thêm chúng từ working directory sang staging area. Sau đó sử dụng câu lệnh git commit để lưu từ staging area vào local repository.
 Sau đó dùng câu lệnh push để lưu trữ lên remote repo.
 
+## _Cú Pháp Cơ Bản_
+
 ### 1. Git init
 
 ```sh
