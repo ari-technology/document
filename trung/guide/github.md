@@ -165,6 +165,13 @@ git push <:remote:> <:branch:>
 
 Lệnh git push được sử dụng để cập nhật các nhánh từ xa với những thay đổi mới nhất mà bạn đã commit.
 
+### Phân biệt Fetch & Pull
+```sh
+Lệnh git pull $remote_origin $branch_name sẽ tải về (hay fetch) dữ liệu từ một branch duy nhất $branch_name từ remote server và sau đó merge các thay đổi từ remote này vào repository dưới local.
+
+Ngược lại git fetch $remote_origin sẽ tải về (fetch) dữ liệu của toàn bộ các branch trên URL quy định bởi $remote_origin nhưng không thực hiện việc merge các thay đổi này vào local.
+```
+
 ### 15. Rebase
 
 Lệnh git rebase cho phép bạn phân tách, di chuyển hoặc thoát khỏi các commit(https://www.codehub.com.vn/Tim-Hieu-Ve-Rebase-Trong-Git)
