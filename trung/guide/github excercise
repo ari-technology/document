@@ -1,0 +1,11 @@
+Ari Github Excercise
+
+1/ Clone source code : https://github.com/ari-training/ari-training-0106.git OR git@github.com:ari-training/ari-training-0106.git
+2/ Mỗi member tạo 1 branch từ develop theo systax : feature/training0106-hoten & thực hiện các yêu cầu sau:
+	- Cập nhật 1 dòng text với nội dung : Welcome to {hoten}  trong file README.md có sẵn, commit & tạo pull request tới develop
+	- Tạo mới 1 file với tên training0106-hoten.txt, commit & tạo pull request tới develop
+	- Tạo mới 1 folder với tên training0106-folder-hoten va 1 file bất kỳ trong thư mục vừa tạo, commit & tạo pull request tới develop
+	- Lưu ý : Commit & tạo pull request đều phải có nội dung comment
+3/ Mỗi member tạo cho mình 1 repository (có nằm trong organization) sau đó invite email : trungba53000@gmail.com
+4/ Tìm hiểu cách xác thực github qua cơ chế ssh-keygen & làm thế nào để access public key bên dưới vào github của mình tạo ra : 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMBZLY6mlnYJ8OoNTFZp/Jg8S1MtxSHLnkKboiPbkU5bLyUKVMOZVbpvZ0dq8kGm2/bRtv3SWQro3hMGcQelO5S7n0UZ6xuoQlrO3Fqdk0duVnHYYPUoPz2sy9x8DXRbS+ij2mxUG9Vb6f2v8e2OOYfr1KEzjuSngH34NYtO8Qg1Pgfy5FjqpNnyHQ0aETS/CPgr1N+C6lMtSdudLRJP0jw+XStpVQu0ngDEHoQ1Pf1Rwvc29tHRYS0BgvA/EH72BYcpkZwuk4YYWO1g0loyMHk6XctpH3dThM9UI21FciFDXezvaVDP5LLOi5cN2V1vY6LDU+EXYkQbTgkMBs3bJKFV2tFdPI142w+IcLlbGa87VCUyF7IAQQ/AfSEcEj7/r7Shupx1Th8wZ8gu1ig/HK8S0wi87mvK9P7JFKFJChmSxOHJsqAaJRBjUzKOfWbV+OTMRgoql3RGuRkXF8buT0cY2eS58GIlULPPAdc0W16U5uiezw3EpSGo4n7cDnzIU= trungmacbookpro@Trungs-MacBook-Pro.local
