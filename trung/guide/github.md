@@ -230,7 +230,7 @@ GitHub là một công ty cung cấp dịch vụ lưu trữ các dự án đư�
 
 Ngoài mục đích chính là nơi để lưu trữ các dự án sử dụng Git, GitHub là một nơi có thể giúp các lập trình viên cải thiện kĩ năng của bản thân. Hiện nay, GitHub là một trong những dịch vụ phổ biến nhất để lưu trữ các dự án mã nguồn mở. Các lập trình viên khác có thể tham gia đóng góp vào các dự án này thông qua việc sử dụng Git và GitHub.
 
-## _Demo project thực tế tmm_
+## _Quy trình áp dụng cho tất cả project tại ARI_
 
 ![](https://raw.githubusercontent.com/ari-technology/document/master/trung/images/git_img_22.png)
 
